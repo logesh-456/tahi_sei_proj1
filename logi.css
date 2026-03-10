@@ -6,6 +6,17 @@
             --text-color: #2f3542;
             --bg-light: #f7f1e3;
         }
+* {
+    box-sizing: border-box; /* Prevents padding from adding to width */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Stops the horizontal "moving"/shaking */
+    width: 100%;
+}
+
 
         body, html {
             margin: 0;
@@ -190,5 +201,6 @@
         }
 
    
+
 
     
