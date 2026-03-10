@@ -199,8 +199,14 @@ body {
             width:250px;
             padding-left: 1000px;
         }
+img {
+    max-width: 100%; /* Image will never be wider than the screen */
+    height: auto;    /* Keeps the photo from looking squashed */
+}
+
 
    
 
 
     
+
