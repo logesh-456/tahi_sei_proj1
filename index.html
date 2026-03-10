@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThaiSei Care - Pregnancy Support</title>
+    <link rel="stylesheet" href="logi.css">
+    <style>
+       
+
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <img src="login.png" alt="" style="display:none;" id="user-photo">
+        <h1>ThaiSei Care<br><span style="font-size:1rem;">தாய் சேய் நலம்</span></h1>
+        
+        <button id="loginBtn" class="login-btn">
+            Login / உள்நுழை
+        </button>
+    </header>
+
+    <section id="reminder-section" class="section">
+        <h2> தினசரி பராமரிப்பு</h2>
+        <div class="card">
+            <div class="pill-icon"></div>
+            <h3>Medicine Reminder</h3>
+            <p>Don't forget your IFA tablet today.</p>
+            <p><small>இன்று உங்கள் இரும்புச்சத்து மாத்திரையை மறக்காதீர்கள்.</small></p>
+
+           
+            
+            
+            <label class="checkbox-container">
+                I have taken my IFA Tablet
+                <br><small style="color:gray;">நான் மாத்திரை எடுத்துக்கொண்டேன்</small>
+                <input type="checkbox" id="">
+                <span class="checkmark"></span>
+            </label>
+            <p id="medMessage" style="color: var(--secondary-color); font-weight: bold; display: none;">Great job! / நன்று! 🎉</p>
+        </div>
+    </section>
+
+    <section id="emergency-section" class="section">
+        <h2>Emergency / அவசர உதவி</h2>
+        <p>Press for 3 seconds to send location</p>
+        <p><small>இருப்பிடத்தை பகிர 3 நொடிகள் அழுத்தவும்</small></p>
+        
+        <button class="sos-btn" id="">
+            SOS
+        </button>
+     
+    </section>
+
+    <section id="map-section" class="section">
+        <h2>Nearby Centers / அருகில் உள்ள மையங்கள்</h2>
+        <p>Anganwadi & Nutrition Centers</p>
+        
+        <div class="map-container">
+            <iframe 
+                id="mapFrame"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=76.8%2C10.8%2C77.2%2C11.2&amp;layer=mapnik" 
+            ></iframe>
+        </div>
+        <button class="login-btn" onclick="findMyLocation()"
+         style="margin-top:20px;
+          background-color:var(--secondary-color);">
+            Find Nearby / அருகில் தேடு
+        </button>
+    </section>
+
+    <footer class="simple-nav">
+        <h4>copyright reserved @2026</h4>
+        <p>HACKATHON PROJECT</p>
+        <div class="foot"> 
+            <img src="foot.png">
+                    
+
+
+        </div>
+       
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+        :root {
+            --primary-color: #ff8fa3; 
+            --secondary-color: #4ecdc4;
+            --emergency-color: #ff4757; 
+            --text-color: #2f3542;
+            --bg-light: #f7f1e3;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--bg-light);
+            color: var(--text-color);
+        }
+
+    
+        .hero {
+            height: 100vh;
+            width: 100%;
+            
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('login.png') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        
+        .login-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .login-btn:hover {
+            transform: scale(1.05);
+            background-color: #ff6b81;
+        }
+
+    
+        .section {
+            padding: 60px 20px;
+            min-height: 80vh; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #reminder-section {
+            background-color: white;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-top: -30px; 
+        }
+
+        .card {
+            background: #fff;
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 25px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .pill-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            user-select: none;
+            margin-top: 20px;
+        }
+
+        .checkbox-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        
+
+        
+        #emergency-section {
+            background-color: #ffeaa7;
+            text-align: center;
+        }
+
+        .sos-btn {
+            background-color: var(--emergency-color);
+            color: white;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+            cursor: pointer;
+            animation: pulse-red 2s infinite;
+        }
+
+        @keyframes pulse-red {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(255, 71, 87, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+        }
+
+        .status-msg {
+            margin-top: 20px;
+            font-weight: bold;
+            color: var(--emergency-color);
+            min-height: 24px;
+        }
+
+       
+        #map-section {
+            background-color: white;
+            padding-bottom: 80px;
+        }
+
+        .map-container {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            background-color: #ddd;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        
+        .simple-nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        .foot img{
+            height: 250px;
+            width:250px;
+            padding-left: 1000px;
+        }
+
+   
+
+    
